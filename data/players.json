@@ -1,0 +1,779 @@
+[
+ {
+  "id": "brentford",
+  "eng": "Brentford",
+  "name": "브렌트포드",
+  "league": "프리미어리그",
+  "country": "잉글랜드",
+  "region": "유럽",
+  "color": "#C1392B",
+  "tz": 1,
+  "players": [
+   {
+    "name": "김지수",
+    "num": 36,
+    "pos": "DF",
+    "stats": null,
+    "contract": "2027-06-30"
+   }
+  ]
+ },
+ {
+  "id": "stoke",
+  "eng": "Stoke City",
+  "name": "스토크 시티",
+  "league": "챔피언십",
+  "country": "잉글랜드",
+  "region": "유럽",
+  "color": "#C1553B",
+  "tz": 1,
+  "players": [
+   {
+    "name": "배준호",
+    "num": 10,
+    "pos": "MF",
+    "stats": {
+     "season": "26-27",
+     "apps": 8,
+     "goals": 0,
+     "assists": 1,
+     "scope": "챔피언십 7경기+EFL컵 1경기",
+     "asOf": "10월 중순",
+     "note": "갱신일 불확실, 이후 경기 미반영"
+    },
+    "contract": "2027-06-30"
+   }
+  ]
+ },
+ {
+  "id": "birmingham",
+  "eng": "Birmingham City",
+  "name": "버밍엄 시티",
+  "league": "챔피언십",
+  "country": "잉글랜드",
+  "region": "유럽",
+  "color": "#4A6FD4",
+  "tz": 1,
+  "players": [
+   {
+    "name": "백승호",
+    "num": 8,
+    "pos": "MF",
+    "stats": {
+     "season": "26-27",
+     "apps": 9,
+     "goals": 1,
+     "assists": 1,
+     "scope": "챔피언십+EFL컵",
+     "asOf": "9/24",
+     "note": "이후 경기 미반영"
+    },
+    "contract": "2028-06-30"
+   }
+  ]
+ },
+ {
+  "id": "swansea",
+  "eng": "Swansea City",
+  "name": "스완지 시티",
+  "league": "챔피언십",
+  "country": "잉글랜드",
+  "region": "유럽",
+  "color": "#7A9B7E",
+  "tz": 1,
+  "players": [
+   {
+    "name": "엄지성",
+    "num": 10,
+    "pos": "MF",
+    "stats": {
+     "season": "26-27",
+     "apps": 9,
+     "goals": 2,
+     "assists": 2,
+     "scope": "챔피언십 8경기+EFL컵 1경기",
+     "asOf": "9월 말",
+     "note": "갱신일 불확실, 이후 경기 미반영"
+    },
+    "contract": "2028-06-30"
+   }
+  ]
+ },
+ {
+  "id": "bayern",
+  "eng": "Bayern Munich",
+  "name": "바이에른 뮌헨",
+  "league": "분데스리가",
+  "country": "독일",
+  "region": "유럽",
+  "color": "#C1553B",
+  "tz": 2,
+  "players": [
+   {
+    "name": "김민재",
+    "num": 3,
+    "pos": "DF",
+    "stats": {
+     "season": "26-27",
+     "apps": 5,
+     "goals": 0,
+     "assists": 0,
+     "scope": "분데스리가만",
+     "asOf": "11/13",
+     "note": "슈퍼컵·포칼·챔스 출전은 미반영"
+    },
+    "contract": "2028-06-30"
+   }
+  ]
+ },
+ {
+  "id": "mainz",
+  "eng": "Mainz 05",
+  "name": "FSV 마인츠 05",
+  "league": "분데스리가",
+  "country": "독일",
+  "region": "유럽",
+  "color": "#C1553B",
+  "tz": 2,
+  "players": [
+   {
+    "name": "이재성",
+    "num": 7,
+    "pos": "MF",
+    "stats": {
+     "season": "26-27",
+     "apps": 10,
+     "goals": 1,
+     "assists": 2,
+     "scope": "분데스리가 8경기+포칼 2경기",
+     "asOf": "11/8"
+    },
+    "contract": "2028-06-30"
+   }
+  ]
+ },
+ {
+  "id": "augsburg",
+  "eng": "Augsburg",
+  "name": "아우크스부르크",
+  "league": "분데스리가",
+  "country": "독일",
+  "region": "유럽",
+  "color": "#C1553B",
+  "tz": 2,
+  "players": [
+   {
+    "name": "설영우",
+    "num": 7,
+    "pos": "DF",
+    "stats": null,
+    "contract": "2030-06-30"
+   }
+  ]
+ },
+ {
+  "id": "unionberlin",
+  "eng": "Union Berlin",
+  "name": "우니온 베를린",
+  "league": "분데스리가",
+  "country": "독일",
+  "region": "유럽",
+  "color": "#C1553B",
+  "tz": 2,
+  "players": [
+   {
+    "name": "정우영",
+    "num": 11,
+    "pos": "MF",
+    "stats": null,
+    "contract": "2026-06-30"
+   }
+  ]
+ },
+ {
+  "id": "gladbach",
+  "eng": "Borussia Monchengladbach",
+  "name": "보루시아 묀헨글라드바흐",
+  "league": "분데스리가",
+  "country": "독일",
+  "region": "유럽",
+  "color": "#7A9B7E",
+  "tz": 2,
+  "players": [
+   {
+    "name": "옌스 카스트로프",
+    "num": 17,
+    "pos": "MF",
+    "stats": null,
+    "contract": "2029-06-30"
+   }
+  ]
+ },
+ {
+  "id": "schalke",
+  "eng": "Schalke 04",
+  "name": "샬케 04",
+  "league": "분데스리가2",
+  "country": "독일",
+  "region": "유럽",
+  "color": "#4A6FD4",
+  "tz": 2,
+  "players": [
+   {
+    "name": "황희찬",
+    "num": 7,
+    "pos": "FW",
+    "stats": {
+     "season": "26-27",
+     "apps": 8,
+     "goals": 0,
+     "assists": 1,
+     "scope": "샬케 입단 후 공식전",
+     "asOf": "11/9"
+    },
+    "contract": "2027-06-30"
+   }
+  ]
+ },
+ {
+  "id": "darmstadt",
+  "eng": "Darmstadt",
+  "name": "다름슈타트 98",
+  "league": "분데스리가2",
+  "country": "독일",
+  "region": "유럽",
+  "color": "#7A9B7E",
+  "tz": 2,
+  "players": [
+   {
+    "name": "이호재",
+    "num": 9,
+    "pos": "FW",
+    "stats": null
+   }
+  ]
+ },
+ {
+  "id": "karlsruhe",
+  "eng": "Karlsruher SC",
+  "name": "칼스루에 SC",
+  "league": "분데스리가2",
+  "country": "독일",
+  "region": "유럽",
+  "color": "#4A6FD4",
+  "tz": 2,
+  "players": [
+   {
+    "name": "권혁규",
+    "num": 8,
+    "pos": "MF",
+    "stats": null,
+    "contract": "2028-06-30"
+   }
+  ]
+ },
+ {
+  "id": "magdeburg",
+  "eng": "Magdeburg",
+  "name": "1.FC 마그데부르크",
+  "league": "분데스리가2",
+  "country": "독일",
+  "region": "유럽",
+  "color": "#4A6FD4",
+  "tz": 2,
+  "players": [
+   {
+    "name": "윤도영",
+    "num": 27,
+    "pos": "MF",
+    "stats": null,
+    "contract": "2030-06-30",
+    "contractNote": "원소속 브라이턴, 마그데부르크에 임대 중"
+   },
+   {
+    "name": "이충현",
+    "num": 18,
+    "pos": "MF",
+    "stats": null,
+    "contract": "2028-12-31",
+    "contractNote": "원소속 부천, 마그데부르크에 임대 중"
+   }
+  ]
+ },
+ {
+  "id": "estrelaamadora",
+  "eng": "Estrela Amadora",
+  "name": "에스트렐라 아마도라",
+  "league": "프리메이라리가",
+  "country": "포르투갈",
+  "region": "유럽",
+  "color": "#C1392B",
+  "tz": 1,
+  "players": [
+   {
+    "name": "양시우",
+    "num": null,
+    "pos": "FW",
+    "stats": null
+   }
+  ]
+ },
+ {
+  "id": "atletico",
+  "eng": "Atletico Madrid",
+  "name": "아틀레티코 마드리드",
+  "league": "라리가",
+  "country": "스페인",
+  "region": "유럽",
+  "color": "#C1553B",
+  "tz": 2,
+  "players": [
+   {
+    "name": "이강인",
+    "num": 7,
+    "pos": "MF",
+    "stats": {
+     "season": "26-27",
+     "apps": 15,
+     "goals": 2,
+     "assists": 1,
+     "scope": "라리가 12경기+챔스 3경기",
+     "asOf": "11/9",
+     "note": "챔스 출전은 보도 기준 추정"
+    },
+    "contract": "2031-06-30"
+   }
+  ]
+ },
+ {
+  "id": "porto",
+  "eng": "FC Porto",
+  "name": "FC 포르투",
+  "league": "프리메이라리가",
+  "country": "포르투갈",
+  "region": "유럽",
+  "color": "#4A6FD4",
+  "tz": 1,
+  "players": [
+   {
+    "name": "황인범",
+    "num": 16,
+    "pos": "MF",
+    "stats": {
+     "season": "26-27",
+     "apps": 8,
+     "goals": 1,
+     "assists": 1,
+     "scope": "포르투갈 리그만",
+     "asOf": "10/31",
+     "note": "챔스·컵 출전은 미반영"
+    },
+    "contract": "2029-06-30"
+   }
+  ]
+ },
+ {
+  "id": "arouca",
+  "eng": "Arouca",
+  "name": "아로카",
+  "league": "프리메이라리가",
+  "country": "포르투갈",
+  "region": "유럽",
+  "color": "#D4A72C",
+  "tz": 1,
+  "players": [
+   {
+    "name": "이현주",
+    "num": 14,
+    "pos": "MF",
+    "stats": null,
+    "contract": "2028-06-30"
+   },
+   {
+    "name": "박시후",
+    "num": 77,
+    "pos": "FW",
+    "stats": null,
+    "contract": "2031-06-30"
+   }
+  ]
+ },
+ {
+  "id": "nacional",
+  "eng": "CD Nacional",
+  "name": "CD 나시오날",
+  "league": "프리메이라리가",
+  "country": "포르투갈",
+  "region": "유럽",
+  "color": "#3182F6",
+  "tz": 1,
+  "players": [
+   {
+    "name": "송민규",
+    "num": 12,
+    "pos": "FW",
+    "stats": null,
+    "contract": "2028-06-30"
+   }
+  ]
+ },
+ {
+  "id": "clubbrugge",
+  "eng": "Club Brugge",
+  "name": "클뤼프 브뤼허",
+  "league": "프로리그(1부)",
+  "country": "벨기에",
+  "region": "유럽",
+  "color": "#4A6FD4",
+  "tz": 2,
+  "players": [
+   {
+    "name": "이한범",
+    "num": 3,
+    "pos": "DF",
+    "stats": {
+     "season": "26-27",
+     "apps": 11,
+     "goals": 1,
+     "assists": 0,
+     "scope": "브뤼헤 소속 리그 8+컵 1+챔스 2",
+     "asOf": "11월 초",
+     "note": "갱신일 불확실"
+    },
+    "contract": "2029-06-30"
+   }
+  ]
+ },
+ {
+  "id": "westerlo",
+  "eng": "Westerlo",
+  "name": "KVC 베스테를로",
+  "league": "프로리그(1부)",
+  "country": "벨기에",
+  "region": "유럽",
+  "color": "#D4A72C",
+  "tz": 2,
+  "players": [
+   {
+    "name": "양민혁",
+    "num": 47,
+    "pos": "FW",
+    "stats": {
+     "season": "26-27",
+     "apps": 7,
+     "goals": 1,
+     "assists": 0,
+     "scope": "벨기에 리그 6경기+컵 1경기",
+     "asOf": "10월 말",
+     "note": "갱신일 불확실"
+    },
+    "contract": "2030-06-30",
+    "contractNote": "원소속 토트넘, 베스테를로에 임대 중"
+   }
+  ]
+ },
+ {
+  "id": "genk",
+  "eng": "Genk",
+  "name": "KRC 헹크",
+  "league": "챌린저 프로리그(2부)",
+  "country": "벨기에",
+  "region": "유럽",
+  "color": "#4A6FD4",
+  "tz": 2,
+  "players": [
+   {
+    "name": "김명준",
+    "num": 89,
+    "pos": "DF",
+    "stats": null,
+    "contract": "2027-06-30"
+   }
+  ]
+ },
+ {
+  "id": "patroeisden",
+  "eng": "Patro Eisden Maasmechelen",
+  "name": "파트로 에이스던",
+  "league": "챌린저 프로리그(2부)",
+  "country": "벨기에",
+  "region": "유럽",
+  "color": "#6B4A9E",
+  "tz": 2,
+  "players": [
+   {
+    "name": "홍석주",
+    "num": 7,
+    "pos": "MF",
+    "stats": null
+   }
+  ]
+ },
+ {
+  "id": "besiktas",
+  "eng": "Besiktas",
+  "name": "베식타스",
+  "league": "쉬페르리그",
+  "country": "튀르키예",
+  "region": "유럽",
+  "color": "#1A1A1A",
+  "tz": 3,
+  "players": [
+   {
+    "name": "오현규",
+    "num": 9,
+    "pos": "FW",
+    "stats": null,
+    "contract": "2028-06-30"
+   }
+  ]
+ },
+ {
+  "id": "alanyaspor",
+  "eng": "Alanyaspor",
+  "name": "알라니아스포르",
+  "league": "쉬페르리그",
+  "country": "튀르키예",
+  "region": "유럽",
+  "color": "#D4772C",
+  "tz": 3,
+  "players": [
+   {
+    "name": "황의조",
+    "num": 16,
+    "pos": "FW",
+    "stats": null,
+    "contract": "2027-06-30"
+   }
+  ]
+ },
+ {
+  "id": "batman",
+  "eng": "Batman Petrolspor",
+  "name": "바트만 페트롤스포르",
+  "league": "TFF 1.리그(2부)",
+  "country": "튀르키예",
+  "region": "유럽",
+  "color": "#C1392B",
+  "tz": 3,
+  "players": [
+   {
+    "name": "조진호",
+    "num": 6,
+    "pos": "MF",
+    "stats": null,
+    "contract": "2027-06-30",
+    "contractNote": "원소속 콘야스포르, 바트만에 임대 중"
+   }
+  ]
+ },
+ {
+  "id": "midtjylland",
+  "eng": "FC Midtjylland",
+  "name": "미트윌란",
+  "league": "수페르리가",
+  "country": "덴마크",
+  "region": "유럽",
+  "color": "#C1553B",
+  "tz": 2,
+  "players": [
+   {
+    "name": "조규성",
+    "num": 10,
+    "pos": "FW",
+    "stats": {
+     "season": "26-27",
+     "apps": 22,
+     "goals": 5,
+     "assists": 1,
+     "scope": "전 대회",
+     "asOf": "11/15",
+     "note": "도움은 출처마다 달라요"
+    },
+    "contract": "2028-06-30"
+   },
+   {
+    "name": "홍현석",
+    "num": 20,
+    "pos": "MF",
+    "stats": null,
+    "contract": "2028-06-30",
+    "contractNote": "원소속 마인츠, 미트윌란에 임대 중"
+   }
+  ]
+ },
+ {
+  "id": "grasshopper",
+  "eng": "Grasshopper Club Zurich",
+  "name": "그라스호퍼",
+  "league": "크레디트스위스 슈퍼리그",
+  "country": "스위스",
+  "region": "유럽",
+  "color": "#3182F6",
+  "tz": 2,
+  "players": [
+   {
+    "name": "이영준",
+    "num": 18,
+    "pos": "MF",
+    "stats": null,
+    "contract": "2028-06-30"
+   }
+  ]
+ },
+ {
+  "id": "austriawien",
+  "eng": "Austria Wien",
+  "name": "아우스트리아 빈",
+  "league": "분데스리가",
+  "country": "오스트리아",
+  "region": "유럽",
+  "color": "#6B4A9E",
+  "tz": 2,
+  "players": [
+   {
+    "name": "이강희",
+    "num": 16,
+    "pos": "MF",
+    "stats": null,
+    "contract": "2029-06-30"
+   },
+   {
+    "name": "이태석",
+    "num": 17,
+    "pos": "MF",
+    "stats": null,
+    "contract": "2029-06-30"
+   }
+  ]
+ },
+ {
+  "id": "celtic",
+  "eng": "Celtic",
+  "name": "셀틱",
+  "league": "프리미어십",
+  "country": "스코틀랜드",
+  "region": "유럽",
+  "color": "#4A6FD4",
+  "tz": 1,
+  "players": [
+   {
+    "name": "양현준",
+    "num": 13,
+    "pos": "MF",
+    "stats": null,
+    "contract": "2028-05-31"
+   }
+  ]
+ },
+ {
+  "id": "rangers",
+  "eng": "Rangers",
+  "name": "레인저스",
+  "league": "프리미어십",
+  "country": "스코틀랜드",
+  "region": "유럽",
+  "color": "#1A3A8F",
+  "tz": 1,
+  "players": [
+   {
+    "name": "김민수",
+    "num": 10,
+    "pos": "DF",
+    "stats": null,
+    "contract": "2030-06-30"
+   }
+  ]
+ },
+ {
+  "id": "crvenazvezda",
+  "eng": "Red Star Belgrade",
+  "name": "츠르베나 즈베즈다",
+  "league": "모차르트 수페르리가",
+  "country": "세르비아",
+  "region": "유럽",
+  "color": "#C1392B",
+  "tz": 2,
+  "players": [
+   {
+    "name": "김예건",
+    "num": 19,
+    "pos": "FW",
+    "stats": null,
+    "contract": "2031-06-30"
+   }
+  ]
+ },
+ {
+  "id": "lafc",
+  "eng": "Los Angeles FC",
+  "name": "LAFC",
+  "league": "MLS",
+  "country": "미국",
+  "region": "북중미",
+  "color": "#D4A72C",
+  "tz": -7,
+  "players": [
+   {
+    "name": "손흥민",
+    "num": 7,
+    "pos": "FW",
+    "stats": {
+     "season": "2026",
+     "apps": 42,
+     "goals": 9,
+     "assists": 18,
+     "scope": "MLS 31경기 7골 12도움+컵대회",
+     "asOf": "11/15",
+     "note": "MLS는 2026 달력 시즌이에요"
+    },
+    "contract": "2027-12-31"
+   }
+  ]
+ },
+ {
+  "id": "stlouis",
+  "eng": "St Louis City SC",
+  "name": "세인트루이스 시티 SC",
+  "league": "MLS",
+  "country": "미국",
+  "region": "북중미",
+  "color": "#C1392B",
+  "tz": -5,
+  "players": [
+   {
+    "name": "정상빈",
+    "num": null,
+    "pos": "FW",
+    "stats": null,
+    "contract": "2026-12-31"
+   }
+  ]
+ },
+ {
+  "id": "seattle",
+  "eng": "Seattle Sounders FC",
+  "name": "시애틀 사운더스",
+  "league": "MLS",
+  "country": "미국",
+  "region": "북중미",
+  "color": "#4A90A4",
+  "tz": -7,
+  "players": [
+   {
+    "name": "김기희",
+    "num": null,
+    "pos": "DF",
+    "stats": {
+     "season": "2026",
+     "apps": 8,
+     "goals": 0,
+     "assists": 0,
+     "scope": "MLS 7경기+리그스컵 1경기",
+     "asOf": "갱신일 불확실"
+    },
+    "contract": "2026-12-31"
+   }
+  ]
+ }
+]
