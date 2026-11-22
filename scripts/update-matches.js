@@ -22,7 +22,20 @@ const ALIAS = {
   clubbrugge: ['club brugge'], besiktas: ['besiktas'], celtic: ['celtic'], rangers: ['rangers'],
   midtjylland: ['midtjylland'],
 };
-const ZONE = { 잉글랜드: 'Europe/London', 독일: 'Europe/Berlin', 스페인: 'Europe/Madrid', 포르투갈: 'Europe/Lisbon' };
+const ZONE = {
+  잉글랜드: 'Europe/London', 독일: 'Europe/Berlin', 스페인: 'Europe/Madrid', 포르투갈: 'Europe/Lisbon',
+  벨기에: 'Europe/Brussels', 튀르키예: 'Europe/Istanbul', 덴마크: 'Europe/Copenhagen', 스위스: 'Europe/Zurich',
+  오스트리아: 'Europe/Vienna', 스코틀랜드: 'Europe/London', 세르비아: 'Europe/Belgrade', 미국: 'America/Los_Angeles',
+};
+const TEAM_ZONE = { lafc: 'America/Los_Angeles', seattle: 'America/Los_Angeles', stlouis: 'America/Chicago' };
+// TheSportsDB 대회 이름 → 한글
+const LEAGUE_KO = {
+  'German Bundesliga': '분데스리가', 'German 2. Bundesliga': '분데스리가2', 'Belgian Pro League': '프로리그',
+  'Belgian Challenger Pro League': '챌린저 프로리그', 'Turkish Super Lig': '쉬페르리그', 'Turkish 1 Lig': 'TFF 1.리그',
+  'Danish Superliga': '수페르리가', 'Swiss Super League': '슈퍼리그', 'Austrian Bundesliga': '오스트리아 분데스리가',
+  'Scottish Premier League': '프리미어십', 'Serbian Super Liga': '수페르리가', 'American Major League Soccer': 'MLS',
+  'UEFA Champions League': 'UEFA 챔피언스리그', 'UEFA Europa League': 'UEFA 유로파리그', 'UEFA Europa Conference League': 'UEFA 컨퍼런스리그', 'UEFA Conference League': 'UEFA 컨퍼런스리그',
+};
 
 const norm = s => String(s || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
 const sleep = ms => new Promise(r => setTimeout(r, ms));
@@ -58,11 +71,11 @@ async function getJSON(url, token) {
 
 (async () => {
   const token = process.env.FOOTBALL_DATA_TOKEN;
-  if (!token && !process.env.FD_MOCK_DIR) { console.error('FOOTBALL_DATA_TOKEN 이 없어요. GitHub Secrets 설정을 확인하세요.'); process.exit(1); }
+  if (!token && !process.env.FD_MOCK_DIR && !process.env.SKIP_FD) { console.error('FOOTBALL_DATA_TOKEN 이 없어요. GitHub Secrets 설정을 확인하세요.'); process.exit(1); }
   const from = new Date(), to = new Date(Date.now() + 45 * 86400000);
   const found = {}; let okComps = 0;
 
-  for (const [code, label] of Object.entries(COMPETITIONS)) {
+  for (const [code, label] of (process.env.SKIP_FD ? [] : Object.entries(COMPETITIONS))) {
     const url = `https://api.football-data.org/v4/competitions/${code}/matches?status=SCHEDULED,TIMED&dateFrom=${ymd(from)}&dateTo=${ymd(to)}`;
     const { status, body } = await getJSON(url, token);
     if (status !== 200 || !body.matches) { console.log(`[실패] ${code} ${label}: HTTP ${status} ${body.message || ''}`); }
@@ -83,7 +96,35 @@ async function getJSON(url, token) {
     if (!process.env.FD_MOCK_DIR) await sleep(7000); // 무료 한도: 분당 10회
   }
 
-  if (okComps === 0) { console.error('가져온 대회가 하나도 없어요. 키 또는 요금제를 확인하세요.'); process.exit(1); }
+  if (okComps === 0 && !process.env.SKIP_FD) { console.error('가져온 대회가 하나도 없어요. 키 또는 요금제를 확인하세요.'); process.exit(1); }
+
+  // ── 2차: football-data에 없는 팀은 TheSportsDB(공개 테스트 키)에서 가져오기 ──
+  const TEAM_IDS = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/team-ids.json'), 'utf8'));
+  let extraOk = 0, extraFail = 0;
+  for (const t of PLAYERS) {
+    if (found[t.id] || !TEAM_IDS[t.id]) continue;
+    const zone = TEAM_ZONE[t.id] || ZONE[t.country]; if (!zone) continue;
+    try {
+      const r = await fetch('https://www.thesportsdb.com/api/v1/json/123/eventsnext.php?id=' + TEAM_IDS[t.id]);
+      const txt = await r.text(); let j = {}; try { j = JSON.parse(txt); } catch (e) {}
+      const ev = (j.events || []).filter(e => e.strTimestamp && new Date(e.strTimestamp + 'Z') > new Date())
+        .sort((a, b) => new Date(a.strTimestamp) - new Date(b.strTimestamp))[0];
+      if (!ev) { console.log(`[없음] ${t.name}: 앞으로 일정이 안 나와요 (HTTP ${r.status})`); extraFail++; }
+      else {
+        const isHome = ev.idHomeTeam === TEAM_IDS[t.id];
+        found[t.id] = { ...localParts(ev.strTimestamp + 'Z', zone), opponent: isHome ? ev.strAwayTeam : ev.strHomeTeam, competition: LEAGUE_KO[ev.strLeague] || ev.strLeague, homeAway: isHome ? 'home' : 'away', _utc: ev.strTimestamp + 'Z' };
+        extraOk++;
+      }
+    } catch (e) { console.log(`[실패] ${t.name}: ${e.message}`); extraFail++; }
+    if (!process.env.FD_MOCK_DIR) await sleep(8000); // 무료 공개 키는 요청 제한이 빡빡해요
+  }
+  console.log(`TheSportsDB: 성공 ${extraOk}팀, 못 가져옴 ${extraFail}팀`);
+
+  // 오래된 일정 정리: 이번에 새로 못 받은 팀의 일정이 어제보다 오래됐으면 지움
+  const cutoff = ymd(new Date(Date.now() - 86400000));
+  for (const id of Object.keys(matches)) {
+    if (!found[id] && matches[id].date < cutoff) { delete matches[id]; console.log(`[정리] ${id}: 지난 일정 삭제`); }
+  }
   let changed = 0;
   for (const [id, m] of Object.entries(found)) {
     const { _utc, ...clean } = m;
