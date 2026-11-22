@@ -185,7 +185,15 @@
     "name": "정우영",
     "num": 11,
     "pos": "MF",
-    "stats": null,
+    "stats": {
+     "season": "26-27",
+     "apps": 7,
+     "goals": 0,
+     "assists": 0,
+     "scope": "분데스리가 7경기(선발 5+교체 2)",
+     "asOf": "갱신일 불확실",
+     "note": "ESPN·분데스리가 공식 집계, 11월 경기 반영 여부 불명"
+    },
     "contract": "2026-06-30"
    }
   ]
@@ -213,7 +221,7 @@
   "id": "schalke",
   "eng": "Schalke 04",
   "name": "샬케 04",
-  "league": "분데스리가2",
+  "league": "분데스리가",
   "country": "독일",
   "region": "유럽",
   "color": "#4A6FD4",
