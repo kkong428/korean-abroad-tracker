@@ -32,12 +32,12 @@
   "homeAway": "away"
  },
  "darmstadt": {
-  "date": "2026-09-11",
+  "date": "2026-11-27",
   "time": "18:30",
-  "tz": "2",
-  "opponent": "아르미니아 빌레펠트",
-  "competition": "분데스리가2 (시간 확인 필요)",
-  "homeAway": "home"
+  "tz": "1",
+  "opponent": "Bochum",
+  "competition": "분데스리가2",
+  "homeAway": "away"
  },
  "atletico": {
   "date": "2026-11-22",
@@ -56,11 +56,11 @@
   "homeAway": "away"
  },
  "clubbrugge": {
-  "date": "2026-09-08",
+  "date": "2026-11-25",
   "time": "21:00",
-  "tz": "2",
-  "opponent": "애스턴 빌라",
-  "competition": "UEFA 챔피언스리그 (시간 확인 필요)",
+  "tz": "1",
+  "opponent": "Liverpool",
+  "competition": "UEFA 챔피언스리그",
   "homeAway": "home"
  },
  "brentford": {
@@ -126,5 +126,109 @@
   "opponent": "Vitória SC",
   "competition": "프리메이라리가",
   "homeAway": "away"
+ },
+ "rangers": {
+  "date": "2026-11-24",
+  "time": "19:45",
+  "tz": "0",
+  "opponent": "Norwich",
+  "competition": "챔피언십",
+  "homeAway": "away"
+ },
+ "schalke": {
+  "date": "2026-11-28",
+  "time": "15:30",
+  "tz": "1",
+  "opponent": "Paderborn",
+  "competition": "분데스리가",
+  "homeAway": "away"
+ },
+ "magdeburg": {
+  "date": "2026-11-29",
+  "time": "13:30",
+  "tz": "1",
+  "opponent": "Energie Cottbus",
+  "competition": "분데스리가2",
+  "homeAway": "home"
+ },
+ "westerlo": {
+  "date": "2026-11-28",
+  "time": "16:00",
+  "tz": "1",
+  "opponent": "RAAL La Louvière",
+  "competition": "프로리그",
+  "homeAway": "home"
+ },
+ "genk": {
+  "date": "2026-11-29",
+  "time": "13:30",
+  "tz": "1",
+  "opponent": "Sint-Truiden",
+  "competition": "프로리그",
+  "homeAway": "away"
+ },
+ "patroeisden": {
+  "date": "2026-11-28",
+  "time": "16:00",
+  "tz": "1",
+  "opponent": "Jong Gent",
+  "competition": "챌린저 프로리그",
+  "homeAway": "home"
+ },
+ "midtjylland": {
+  "date": "2026-11-23",
+  "time": "19:00",
+  "tz": "1",
+  "opponent": "Brøndby",
+  "competition": "수페르리가",
+  "homeAway": "away"
+ },
+ "grasshopper": {
+  "date": "2026-11-28",
+  "time": "18:00",
+  "tz": "1",
+  "opponent": "Basel",
+  "competition": "슈퍼리그",
+  "homeAway": "home"
+ },
+ "austriawien": {
+  "date": "2026-11-22",
+  "time": "17:00",
+  "tz": "1",
+  "opponent": "Red Bull Salzburg",
+  "competition": "오스트리아 분데스리가",
+  "homeAway": "home"
+ },
+ "celtic": {
+  "date": "2026-11-26",
+  "time": "20:00",
+  "tz": "0",
+  "opponent": "Torreense",
+  "competition": "UEFA 유로파리그",
+  "homeAway": "away"
+ },
+ "crvenazvezda": {
+  "date": "2026-11-26",
+  "time": "21:00",
+  "tz": "1",
+  "opponent": "Gent",
+  "competition": "UEFA 컨퍼런스리그",
+  "homeAway": "away"
+ },
+ "lafc": {
+  "date": "2026-11-23",
+  "time": "17:00",
+  "tz": "-8",
+  "opponent": "St. Louis City SC",
+  "competition": "MLS",
+  "homeAway": "away"
+ },
+ "stlouis": {
+  "date": "2026-11-23",
+  "time": "19:00",
+  "tz": "-6",
+  "opponent": "Los Angeles FC",
+  "competition": "MLS",
+  "homeAway": "home"
  }
 }
