@@ -40,12 +40,12 @@
   "homeAway": "away"
  },
  "atletico": {
-  "date": "2026-11-22",
+  "date": "2026-11-25",
   "time": "21:00",
   "tz": "1",
-  "opponent": "Getafe",
-  "competition": "라리가",
-  "homeAway": "away"
+  "opponent": "Viking",
+  "competition": "UEFA 챔피언스리그",
+  "homeAway": "home"
  },
  "porto": {
   "date": "2026-11-24",
