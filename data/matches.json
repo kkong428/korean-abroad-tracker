@@ -64,12 +64,12 @@
   "homeAway": "home"
  },
  "brentford": {
-  "date": "2026-11-23",
-  "time": "20:00",
+  "date": "2026-11-28",
+  "time": "15:00",
   "tz": "0",
-  "opponent": "Everton",
+  "opponent": "Man United",
   "competition": "프리미어리그",
-  "homeAway": "home"
+  "homeAway": "away"
  },
  "swansea": {
   "date": "2026-11-24",
@@ -192,10 +192,10 @@
   "homeAway": "home"
  },
  "austriawien": {
-  "date": "2026-11-22",
+  "date": "2026-11-28",
   "time": "17:00",
   "tz": "1",
-  "opponent": "Red Bull Salzburg",
+  "opponent": "Wolfsberger AC",
   "competition": "오스트리아 분데스리가",
   "homeAway": "home"
  },
@@ -230,5 +230,37 @@
   "opponent": "Los Angeles FC",
   "competition": "MLS",
   "homeAway": "home"
+ },
+ "karlsruhe": {
+  "date": "2026-11-28",
+  "time": "13:00",
+  "tz": "1",
+  "opponent": "Hertha",
+  "competition": "분데스리가2",
+  "homeAway": "away"
+ },
+ "besiktas": {
+  "date": "2026-11-26",
+  "time": "20:45",
+  "tz": "3",
+  "opponent": "Hapoel Be'er Sheva",
+  "competition": "UEFA 유로파리그",
+  "homeAway": "home"
+ },
+ "alanyaspor": {
+  "date": "2026-11-27",
+  "time": "20:00",
+  "tz": "3",
+  "opponent": "Konyaspor",
+  "competition": "쉬페르리그",
+  "homeAway": "home"
+ },
+ "batman": {
+  "date": "2026-11-29",
+  "time": "20:00",
+  "tz": "3",
+  "opponent": "Bandırmaspor",
+  "competition": "TFF 1.리그",
+  "homeAway": "away"
  }
 }
