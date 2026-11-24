@@ -48,12 +48,12 @@
   "homeAway": "home"
  },
  "porto": {
-  "date": "2026-11-24",
-  "time": "20:00",
+  "date": "2026-11-29",
+  "time": "20:30",
   "tz": "0",
-  "opponent": "Feyenoord",
-  "competition": "UEFA 챔피언스리그",
-  "homeAway": "away"
+  "opponent": "Sporting CP",
+  "competition": "프리메이라리가",
+  "homeAway": "home"
  },
  "clubbrugge": {
   "date": "2026-11-25",
@@ -176,11 +176,11 @@
   "homeAway": "home"
  },
  "midtjylland": {
-  "date": "2026-11-23",
-  "time": "19:00",
+  "date": "2026-11-26",
+  "time": "18:45",
   "tz": "1",
-  "opponent": "Brøndby",
-  "competition": "수페르리가",
+  "opponent": "Pafos",
+  "competition": "UEFA 컨퍼런스리그",
   "homeAway": "away"
  },
  "grasshopper": {
